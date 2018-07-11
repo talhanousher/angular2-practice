@@ -4,3 +4,8 @@
 <hr>
 <h1>Custom Attributes Directives</h1>
 <div dirHighlight [defaultColor]="'red'" [highlightColor]="'green'">Hello</div>
+<hr>
+<h1>Structural Directives</h1>
+<h3>*ngIf/*ngFor</h3>
+<p *ngIf="changeProperty">Conditional Structural Directive</p>
+<button (click)="Changed()">Change</button>
