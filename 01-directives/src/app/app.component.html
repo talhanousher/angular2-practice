@@ -6,8 +6,17 @@
 <div dirHighlight [defaultColor]="'red'" [highlightColor]="'green'">Hello</div>
 <hr>
 <h1>Structural Directives</h1>
-<h3>*ngIf/*ngFor</h3>
+<h3>*ngIf</h3>
 <p *ngIf="changeProperty">Conditional Structural Directive</p>
 <button (click)="Changed()">Change</button>
-<br>
+<hr>
+<h3>*ngFor</h3>
 <span *ngFor="let item of arr">{{item}} , </span>
+<hr>
+<h3>*ngSwitch</h3>
+<div [ngSwitch]="value">
+    <p *ngSwitchCase="10">10</p>
+    <p *ngSwitchCase="100">100</p>
+    <p *ngSwitchCase="1000">1000</p>
+    <p *ngSwitchCase="10000">10000</p>
+</div>
